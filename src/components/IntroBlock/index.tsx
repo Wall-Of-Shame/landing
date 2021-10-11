@@ -12,6 +12,9 @@ import {
 
 const IntroBlock = () => {
   const handleOnClick = () => scrollToSection('about');
+  const handleRedirect = () => {
+    window.open("https://wallofshame.netlify.app/");
+  }
   return (
 
       <IntroSection>
@@ -28,6 +31,15 @@ const IntroBlock = () => {
                 onClick={handleOnClick}
               >
                 Explore
+              </Button>
+              <Button
+                key='try'
+                fixedWidth={true}
+                color='#55BBDA'
+                focusColor='#6C7BFF'
+                onClick={handleRedirect}
+              >
+                Try it now!
               </Button>
             </ButtonWrapper>
           </Col>
