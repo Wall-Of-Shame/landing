@@ -10,9 +10,13 @@ interface Props {
 const Block = ({ title, content, t }: Props) => {
   return (
     <Container>
-      <h6>{t(title)}</h6>
+      <h6>{title.split("\n").map((i,key) => {
+            return <div key={key}>{i}</div>;
+        })}</h6>
       <TextWrapper>
-        <Content>{t(content)}</Content>
+        <Content>{content.split("\n").map((i,key) => {
+            return <p key={key}>{i}</p>;
+        })}</Content>
       </TextWrapper>
     </Container>
   );

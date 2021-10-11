@@ -29,8 +29,12 @@ const LeftContentBlock = ({
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
+              <h6>{title.split("\n").map((i,key) => {
+                return <div key={key}>{i}</div>;
+                })}</h6>
+              <Content>{content.split("\n").map((i,key) => {
+                return <p key={key}>{i}</p>;
+              })}</Content>
               <ServiceWrapper>
                 <Row justify="space-between">
                   {typeof section === "object" &&

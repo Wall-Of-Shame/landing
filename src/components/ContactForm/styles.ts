@@ -14,7 +14,7 @@ export const FormGroup = styled("form")`
 
   @media only screen and (max-width: 1045px) {
     max-width: 100%;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 `;
 
@@ -27,8 +27,9 @@ export const Span = styled("span")<any>`
 `;
 
 export const ButtonContainer = styled("div")`
-  text-align: end;
+  text-align: left;
   position: relative;
+  padding: 0 0.275rem;
 
   @media only screen and (max-width: 414px) {
     padding-top: 0.75rem;

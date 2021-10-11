@@ -1,38 +1,26 @@
 import { useState, useEffect } from "react";
 import { notification } from "antd";
-import axios from "axios";
 
 export const useForm = (validate: any) => {
-  const [values, setValues] = useState({});
+  const [values, setValues] = useState({ name: "", email: "" });
   const [errors, setErrors] = useState({});
   const [shouldSubmit, setShouldSubmit] = useState(false);
 
   const openNotificationWithIcon = () => {
     notification["success"]({
       message: "Success",
-      description: "Your message has been sent!",
+      description: "Your information has been registered!",
     });
   };
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
     setErrors(validate(values));
-    // Your url for API
-    const url = "";
-    if (Object.keys(values).length === 3) {
-      axios
-        .post(url, {
-          ...values,
-        })
-        .then(() => {
-          setShouldSubmit(true);
-        });
-    }
+    setShouldSubmit(true);
   };
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && shouldSubmit) {
-      setValues("");
       openNotificationWithIcon();
     }
   }, [errors, shouldSubmit]);

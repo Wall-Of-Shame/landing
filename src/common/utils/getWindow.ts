@@ -24,3 +24,10 @@ export const getScroll = (
   }
   return result;
 };
+
+export const scrollToSection = (id: string) => {
+  const element = document.getElementById(id) as HTMLDivElement;
+  element.scrollIntoView({
+    behavior: "smooth",
+  });
+};
