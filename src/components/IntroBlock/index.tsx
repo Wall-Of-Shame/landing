@@ -13,7 +13,7 @@ import {
 const IntroBlock = () => {
   const handleOnClick = () => scrollToSection('about');
   const handleRedirect = () => {
-    window.open("https://wallofshame.netlify.app/");
+    window.open("https://wallofshame.io/");
   }
   return (
 
