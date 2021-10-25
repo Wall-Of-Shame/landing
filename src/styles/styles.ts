@@ -4,13 +4,13 @@ export const Styles = createGlobalStyle`
 
     @font-face {
         font-family: "Poppins Regular";
-        src: url("${process.env.PUBLIC_URL}/fonts/Poppins-Regular.ttf") format("truetype");
+        src: url("/fonts/Poppins-Regular.ttf") format("truetype");
         font-style: normal;
     }
 
     @font-face {
         font-family: "Poppins Extra Bold";
-        src: url("${process.env.PUBLIC_URL}/fonts/Poppins-ExtraBold.ttf") format("truetype");
+        src: url("/fonts/Poppins-ExtraBold.ttf") format("truetype");
         font-style: normal;
     }
 
