@@ -35,8 +35,8 @@ const IntroBlock = () => {
               <Button
                 key='try'
                 fixedWidth={true}
-                color='#55BBDA'
-                focusColor='#6C7BFF'
+                color='#faa284'
+                focusColor='#ffbf2f'
                 onClick={handleRedirect}
               >
                 Try it now!

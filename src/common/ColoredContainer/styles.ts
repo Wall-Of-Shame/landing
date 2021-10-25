@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledContainer = styled("div")<any>`
-  background-color: #e1e9ff;
+  background-color: #fff7f0;
   position: relative;
   max-width: 100%;
   margin-right: auto;

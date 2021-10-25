@@ -58,7 +58,7 @@ export const Styles = createGlobalStyle`
     h5,
     h6 {
         font-family: 'Poppins Extra Bold', serif;
-        color: #1d256b;
+        color: #ffbf2f;
         font-size: 56px;
         line-height: 1.18;
 
@@ -72,7 +72,7 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #1d256b;
+        color: #413322;
         font-size: 21px;        
         line-height: 1.41;
     }

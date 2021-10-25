@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const IntroSection = styled("section")`
   padding: 4rem 0 0rem;
-  background-color: #e1e9ff;
+  background-color: #fff7f0;
 
   width: 100%;
 
@@ -41,7 +41,7 @@ export const MinPara = styled("p")`
 
 export const ButtonWrapper = styled("div")`
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   max-width: 100%;
   padding-bottom: 4rem;
 

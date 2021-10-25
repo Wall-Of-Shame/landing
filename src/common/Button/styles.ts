@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const StyledButton = styled("button")<any>`
-  background: ${(p) => p.color || "#6C7BFF"};
+  background: ${(p) => p.color || "#ffbf2f"};
   color: #ffffff;
   font-size: 1rem;
   font-weight: 1000;
   width: 100%;
-  border: 1px solid ${(p) => p.color || "#6C7BFF"};
+  border: 1px solid ${(p) => p.color || "#ffbf2f"};
   border-radius: 10px;
   padding: 13px 0;
   cursor: pointer;
@@ -19,7 +19,7 @@ export const StyledButton = styled("button")<any>`
   &:active,
   &:focus {
     color: #fff;
-    border: 1px solid ${(p) => p.focusColor || "#55BBDA"};
-    background-color: ${(p) => p.focusColor || "#55BBDA"};
+    border: 1px solid ${(p) => p.focusColor || "#faa284"};
+    background-color: ${(p) => p.focusColor || "#faa284"};
   }
 `;
